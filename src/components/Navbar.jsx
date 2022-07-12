@@ -13,7 +13,7 @@ const Navbar = () => {
   const [sider, setSider] = useState(false);
   const logout = async () => {
     try {
-      const URI = "http://localhost:5000/users/logout";
+      const URI = "https://notes-ensolvers.herokuapp.com/logout";
       await axios({
         method: "get",
         url: URI,

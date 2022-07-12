@@ -34,7 +34,7 @@ const AddNote = () => {
         });
         return;
       } else {
-        await axios.post("http://localhost:5000/create", note);
+        await axios.post("https://notes-ensolvers.herokuapp.com/create", note);
         setUpload(true);
         setNote(initialState);
         toast.success(`Note created successful`, {

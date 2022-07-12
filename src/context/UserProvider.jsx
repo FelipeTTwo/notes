@@ -13,7 +13,7 @@ const UserProvider = ({ children }) => {
   const readToken = async () => {
     const res = await axios({
       method: "get",
-      url: "http://localhost:5000/users",
+      url: "https://notes-ensolvers.herokuapp.com/users",
       withCredentials: true,
     });
     if (res.data.isToken) {

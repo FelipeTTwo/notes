@@ -34,7 +34,10 @@ const UpdateNote = ({ id }) => {
         });
         return;
       } else {
-        await axios.put(`http://localhost:5000/update/${id}`, note);
+        await axios.put(
+          `https://notes-ensolvers.herokuapp.com/update/${id}`,
+          note
+        );
         setUpload(true);
         setNote(initialState);
       }

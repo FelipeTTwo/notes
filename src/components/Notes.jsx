@@ -12,7 +12,7 @@ const Notes = () => {
 
   useEffect(() => {
     const axiosData = async () => {
-      const URI = "http://localhost:5000/";
+      const URI = "https://notes-ensolvers.herokuapp.com/";
       const res = await axios.get(URI);
       setData(res.data);
       setUpload(false);

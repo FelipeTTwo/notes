@@ -23,7 +23,10 @@ const NoteTemplate = ({ data }) => {
         content,
         archived: archived === 0 ? 1 : 0,
       };
-      await axios.put(`http://localhost:5000/update/${idNote}`, user);
+      await axios.put(
+        `https://notes-ensolvers.herokuapp.com/update/${idNote}`,
+        user
+      );
       setUpload(true);
     } catch (error) {
       console.log(error);

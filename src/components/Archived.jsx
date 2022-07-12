@@ -9,7 +9,7 @@ const Archived = () => {
 
   useEffect(() => {
     const axiosData = async () => {
-      const URI = "http://localhost:5000/archived";
+      const URI = "https://notes-ensolvers.herokuapp.com/archived";
       const res = await axios.get(URI);
       setData(res.data);
       setUpload(false);

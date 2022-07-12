@@ -8,7 +8,7 @@ const DeleteNote = ({ id }) => {
   const { setUpload } = useContext(UserContext);
   const handleDeleteNote = async () => {
     try {
-      await axios.delete(`http://localhost:5000/remove/${id}`);
+      await axios.delete(`https://notes-ensolvers.herokuapp.com/remove/${id}`);
       setUpload(true);
     } catch (error) {
       toast.error(`${error}`, {
