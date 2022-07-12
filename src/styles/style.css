@@ -1,0 +1,22 @@
+body {
+  background: #e6e4e4;
+  font-family: "Poppins", sans-serif;
+}
+
+.img-1 {
+  background-image: url("../../public/slide1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.img-2 {
+  background-image: url("../../public/slide2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.img-3 {
+  background-image: url("../../public/slide3.jpg");
+  background-size: cover;
+  background-position: center;
+}

@@ -1,0 +1,197 @@
+.body {
+  padding-bottom: 130px;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+  background: #4285f4;
+  transition: all 0.3s ease;
+}
+
+nav.sticky {
+  background: #fbbc05;
+  padding: 13px 0;
+  z-index: 50;
+}
+
+nav .navbar {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.navbar .logo {
+  font-family: "Open Sans", sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  color: #fff;
+}
+
+nav.sticky .navbar .logo {
+  color: #fff;
+}
+
+.navbar .menu {
+  display: flex;
+  position: relative;
+}
+
+.menu li {
+  margin: 0 8px;
+  list-style: none;
+}
+.menu li a {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+nav.sticky .menu li a {
+  color: #0e2431;
+}
+
+nav.sticky .menu li a:hover {
+  color: #0e2431;
+}
+
+.menu li a:hover {
+  color: #0e2431;
+}
+
+.navbar .media-icons p {
+  margin: 0 6px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.navbar .media-icons a:hover {
+  color: #0e2431;
+}
+
+nav.sticky .navbar .media-icons a {
+  color: #fff;
+}
+
+nav.sticky .media-icons a:hover {
+  color: #0e2431;
+}
+
+/* Botón de menú y botón de cancelar dentro del slider*/
+
+nav .menu-btn,
+.menu .cancel-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  display: none;
+  font-size: 25px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+nav .menu-btn {
+  color: #fff;
+}
+
+nav.sticky .menu-btn {
+  color: #fff;
+}
+
+.menu .cancel-btn {
+  color: #fff;
+}
+
+@media (max-width: 750px) {
+  .navbar .menu {
+    position: fixed;
+    top: 0;
+    left: -400px;
+    max-width: 400px;
+    width: 100%;
+    height: 100vh;
+    padding-top: 75px;
+    flex-direction: column;
+    align-items: center;
+    background: #0e2431;
+    transition: all 0.5s ease;
+  }
+
+  .menu li {
+    position: relative;
+  }
+
+  .menu li a {
+    display: block;
+    width: 360px;
+    margin-top: 18px;
+    padding-bottom: 18px;
+    font-size: 23px;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+  }
+
+  .menu li a::before {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #ea4335;
+    content: "";
+    transition: all 0.5s ease;
+    clip-path: polygon(0 0, 0 0, 0 51%, 0 100%, 0% 100%);
+  }
+
+  .menu li a:hover::before {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2.5px;
+    background-color: #4285f4;
+    content: "";
+    clip-path: polygon(0 20%, 70% 20%, 100% 50%, 72% 70%, 0 70%);
+  }
+
+  nav.sticky .menu.active li a:hover {
+    color: #fbbc05;
+  }
+
+  .navbar .menu.active {
+    left: 0;
+  }
+  .navbar .media-icons {
+    display: none;
+  }
+  nav .menu-btn,
+  .menu .cancel-btn {
+    display: block;
+  }
+
+  .menu .cancel-btn:hover {
+    color: #ea4335;
+  }
+
+  .menu-btn.open {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.logout {
+  text-decoration: none;
+  box-shadow: none;
+  color: #fff;
+}
+.logout:hover {
+  color: #0e2431;
+  cursor: pointer;
+}

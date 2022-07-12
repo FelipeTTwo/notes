@@ -1,0 +1,36 @@
+.card {
+  position: relative;
+}
+
+.xmark {
+  position: absolute;
+  right: 10px;
+  font-size: 23px;
+  cursor: pointer;
+}
+
+.edit {
+  position: absolute;
+  right: 40px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.archived {
+  position: absolute;
+  right: 80px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.xmark:hover {
+  color: #ea4335;
+}
+
+.edit:hover {
+  color: #fbbc05;
+}
+
+.archived:hover {
+  color: #fbbc05;
+}
