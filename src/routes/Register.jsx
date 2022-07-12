@@ -8,7 +8,7 @@ import FormError from "../components/FormError";
 import { toast, ToastContainer } from "react-toastify";
 
 const Register = () => {
-  const URI = "https://notes-ensolvers.herokuapp.com/create";
+  const URI = "https://notes-ensolvers.herokuapp.com/users/create";
   const {
     register,
     handleSubmit,
