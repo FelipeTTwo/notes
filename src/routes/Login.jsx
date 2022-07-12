@@ -19,7 +19,7 @@ const Login = () => {
     formState: { errors },
   } = useForm();
 
-  const URI = "https://notes-ensolvers.herokuapp.com/login";
+  const URI = "https://notes-ensolvers.herokuapp.com/users/login";
   const { required } = formValidate();
   const { online, setOnline } = useContext(UserContext);
   const navigate = useNavigate();
